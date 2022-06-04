@@ -1,6 +1,8 @@
 body{
     background-color: slategray;
     text-align: center;
+}
+    
 p{
     color: white;
     font-family: shanti;
@@ -31,11 +33,8 @@ input{
 }
 
 
-inpur:focus {
+input:focus {
     border solid 5px #00FFCE;
     outline:none;
 }
 
-
-
-}
