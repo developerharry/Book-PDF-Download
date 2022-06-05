@@ -1,2 +1,10 @@
-<link rel = "stylesheet" href="{{
-    url_for('static', filename='css/loading.css')}}">
+body{
+    text-align: center
+}
+    
+ul{
+    color: Black;
+    font-family: Sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
