@@ -1,6 +1,6 @@
 body{
-    background-color = lightgrey;
-    text-align: center;
+    background-color : white;
+    text-align: center
 }
     
 p{
@@ -9,7 +9,7 @@ p{
     font-size: 2em;
     font-weight: bold;
     margin-top: 200px;
-    margin-bottom:50px;
+    margin-bottom:30px;
 }
 
 input{
@@ -24,17 +24,18 @@ input{
 }
 
 #book{
-    background-color = black;
+    background-color : black;
     color: white;
     width: 200px;
     height: 50px;
     margin: 20px;
     font-family: Sans-serif;
     font-size:1.5em;
+  
 }
 
 #book:hover{
-    background-color = green;
+    background-color : green;
     color: white;
     cursor: pointer;
 }
@@ -45,45 +46,3 @@ input:focus {
     outline:none;
 }
 
-@media only screen and (max-device-width: 600px) {
-    p{
-    color: blue;
-    font-family: Sans-serif;
-    font-size: 3em;
-    font-weight: bold;
-    margin-top: 200px;
-    margin-bottom:50px;
-}
-    input{
-    width: 500px;
-    height: 60px;
-    margin: 20px;
-    border: none
-    border-radius: 20px;
-    font-family: Sans-serif;
-    text-align: center;
-    font-size: 2em;
-}
-
-#book{
-    background-color = black;
-    color: white;
-    width: 300px;
-    font-family: Sans-serif;
-    font-size:2em;
-}
-
-#book:hover{
-    background-color = green;
-    color: white;
-    cursor: pointer;
-}
-
-
-input:focus {
-    border solid 5px #00FFCE;
-    outline:none;
-}
-
-    
-}
