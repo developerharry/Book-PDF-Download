@@ -20,7 +20,7 @@ def index():
     return render_template("index.html")
 
 @app.route("/loading")
-def index():
+def loading():
     return render_template("loading.html")
 
 
