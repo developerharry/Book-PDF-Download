@@ -1,11 +1,11 @@
 body{
-    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1));
+    background-color = lightgreen;
     text-align: center;
 }
     
 p{
-    color: blue;
-    font-family: cursive;
+    color: White;
+    font-family: Sans-serif;
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 200px;
@@ -18,21 +18,22 @@ input{
     margin: 20px;
     border: none
     border-radius: 20px;
-    font-family: cursive;
+    font-family: Sans-serif;
     text-align: center;
     font-size: 1.3em;
 }
 
 #book{
-    background-color = palevoiletred;
-    color: white;
+    background-color = blue;
+    color: green;
     width: 200px;
-    font-family: cursive;
+    font-family: Sans-serif;
     font-size:1.5em;
 }
 
 #book:hover{
-    background-color = mediumvoiletred;
+    background-color = green;
+    color: Blue;
     cursor: pointer;
 }
 
@@ -42,44 +43,14 @@ input:focus {
     outline:none;
 }
 
-@media only screen and (max-device-width: 480px) {
- p{
+@media only screen and (max-device-width: 600px) {
+    p{
     color: blue;
     font-family: cursive;
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 200px;
     margin-bottom:50px;
-}
-
-input{
-    width: 300px;
-    height: 50px;
-    margin: 20px;
-    border: none
-    border-radius: 20px;
-    font-family: cursive;
-    text-align: center;
-    font-size: 1.3em;
-}
-
-#book{
-    background-color = palevoiletred;
-    color: white;
-    width: 200px;
-    font-family: cursive;
-    font-size:1.5em;
-}
-
-#book:hover{
-    background-color = mediumvoiletred;
-    cursor: pointer;
-}
-
-
-input:focus {
-    border solid 5px #00FFCE;
-    outline:none;
 }
         
-    }
+}
