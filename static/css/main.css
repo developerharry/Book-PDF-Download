@@ -1,10 +1,10 @@
 body{
-    background-color: slategray;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1));
     text-align: center;
 }
     
 p{
-    color: white;
+    color: blue;
     font-family: cursive;
     font-size: 1.5em;
     font-weight: bold;
