@@ -19,7 +19,7 @@ app.secret_key ="kspilchfi"
 def index():
     return render_template("index.html")
 
-@app.route("/loading")
+@app.route("/loading", methods=["POST", "GET"])
 def loading():
     return render_template("loading.html")
 
