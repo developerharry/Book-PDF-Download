@@ -5,9 +5,11 @@ body{
     
 p{
     color: white;
-    font-family: shanti;
-    font-size: 1.2em;
-    margin: 20px;
+    font-family: cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-bottom:50px;
 }
 
 input{
@@ -16,7 +18,7 @@ input{
     margin: 20px;
     border: none
     border-radius: 20px;
-    font-family: shanti;
+    font-family: cursive;
     text-align: center;
     font-size: 1.3em;
 }
@@ -25,7 +27,7 @@ input{
     background-color = palevoiletred;
     color: white;
     width: 200px;
-    font-family: shanti;
+    font-family: cursive;
     font-size:1.5em;
 }
 
