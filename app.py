@@ -19,6 +19,11 @@ app.secret_key ="kspilchfi"
 def index():
     return render_template("index.html")
 
+@app.route("/loading")
+def index():
+    return render_template("loading.html")
+
+
 @app.route('/result', methods=["POST", "GET"])
 def book():
     book_name = str(request.form["book_name_input"])
