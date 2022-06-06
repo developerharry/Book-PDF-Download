@@ -29,7 +29,7 @@ def book():
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0',
     }
     # to search
-    query = book_name + " book drive pdf"
+    query = "download" + book_name + " book pdf"
 
     sites = []
     data = []
@@ -70,14 +70,10 @@ def book():
         for pdf_link in links_list:
             u = urlparse(pdf_link)
 
-            if u.netloc[0:17] == "drive.google.com" and i < 10:
+            if u.netloc[0:17] == "drive.google.com" or u.path[-4:] == ".pdf":
                 in_site = u.geturl()
 
                 data.append(in_site)
-
-                i += 1
-               
-
 
     return render_template("result.html", data = data)
 
