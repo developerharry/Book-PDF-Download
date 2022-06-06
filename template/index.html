@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel = "stylesheet" href="{{
-    url_for('static', filename='css/main.css')}}">
+    <link rel = "stylesheet" href='styles.css')}}">
 </head>
 <body>
 
-      <form action = "result" method = "post" >
-          <h1>hi!<br>Happy to have you..<br>Books pdf Downloader</h1>
-          <P>Please, enter book name</P>
-          <input type = "text" name = "book_name_input" /><br>
-          <input type = "submit" value = "submit"  id = "book"/>
-      </form>
-
+<h1>hi! </h1>
+<img src="https://github.com/developerharry/Book-PDF-Download/blob/main/book%20pdf%20downloader.gif?raw=true">
+<form action = "result" method = "post" >
+    <P>Enter Book name and We`ll serve you PDF links</P>
+    <input type = "text" name = "book_name_input" /><br>
+    <input type = "submit" value = "submit"  id = "book" onclick="show()" />
+</form>
+<img id="image" style="display:none" src="https://github.com/developerharry/Book-PDF-Download/blob/main/loding.gif?raw=true"/>
+            
+<script>
+  function show() {
+ 
+            /* Access image by id and change
+            the display property to block*/
+            document.getElementById('image')
+                    .style.display = "inline";
+ 
+       
+}
+</script>
 </body>
 </html>
