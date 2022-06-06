@@ -76,6 +76,10 @@ def book():
                 data.append(in_site)
 
                 i += 1
+                
+            if u.path[-4:] == ".pdf":
+            dri = u.geturl()
+            data.append(dri)
 
 
     return render_template("result.html", data = data)
