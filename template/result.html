@@ -7,11 +7,15 @@
     url_for('static', filename='css/result.css')}}">
 </head>
 <body>
-<ul>
+<h1>Hurray!!<br> We have found many PDF files</h1>
+<p>____________________________<br><br></p>
 {% for item in data %}
     <li><a href={{item}} target="_blank">PDF Book Link</a></li>
 {% endfor %}
-</ul>
 
+<p>____________________________<br><br>Note: Incase you haven`t found correct book pdf among all the files. Try searching by book name and author.</p>
+<form action="https://book-pdf-downloader.herokuapp.com">
+    <input type="submit" value="Search more" id="back" />
+</form>
 </body>
 </html>
