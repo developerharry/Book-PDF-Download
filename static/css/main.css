@@ -3,20 +3,27 @@ body{
     text-align: center
 }
     
-p{
+h1{
     color: Black;
     font-family: Sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
-    margin-top: 200px;
-    margin-bottom:30px;
+}
+
+
+
+p{
+    color: mediumBlack;
+    font-family: Sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom:15px;
 }
 
 input{
     width: 400px;
     height: 50px;
-    margin: 20px;
-    border: none
+    margin-bottom:15px;
     border-radius: 30px;
     font-family: Sans-serif;
     text-align: center;
@@ -27,12 +34,12 @@ input{
     background-color : black;
     color: white;
     width: 200px;
-    height: 50px;
-    margin: 20px;
+    border-radius: 25px;
     font-family: Sans-serif;
-    font-size:1.5em;
+    font-size:2em;
   
 }
+
 
 #book:hover{
     background-color : green;
@@ -45,4 +52,3 @@ input:focus {
     border solid 10px #00FFCE;
     outline:none;
 }
-
