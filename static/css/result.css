@@ -1,10 +1,48 @@
 body{
     text-align: center
+   
+}
+
+
+
+h1{
+    text-align: center
+    color: Black;
+    font-family: Sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px;
+}
+
+p{
+    text-align: center
+    color: Black;
+    font-family: Sans-serif;
+    font-size: 1em;
+    margin: 10px;
 }
     
-ul{
+li{
     color: Black;
     font-family: Sans-serif;
     font-size: 1.5em;
     font-weight: bold;
+}
+
+#back{
+    background-color : black;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    font-family: Sans-serif;
+    font-size:1.2em;
+  
+}
+
+
+#back:hover{
+    background-color : green;
+    color: white;
+    cursor: pointer;
 }
