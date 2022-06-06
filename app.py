@@ -19,11 +19,6 @@ app.secret_key ="kspilchfi"
 def index():
     return render_template("index.html")
 
-@app.route("/loading")
-def loading():
-    return """<img src="https://c.tenor.com/pgO8hZgOW5AAAAAC/loading-bar.gif">
-              <p>Relax now.. Chiill buddy..<br>We are working to get your book`s PDF.</p>"""
-
 
 @app.route('/result', methods=["POST", "GET"])
 def book():
