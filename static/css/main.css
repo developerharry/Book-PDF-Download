@@ -34,6 +34,8 @@ input{
     background-color : black;
     color: white;
     width: 200px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     border-radius: 25px;
     font-family: Sans-serif;
     font-size:2em;
