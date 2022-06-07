@@ -43,6 +43,8 @@ def book():
             print("found")
             drive_ur = x.geturl()
             data.append(drive_ur)
+        else:
+            None
 
     links_list = []
     for site in sites:
@@ -70,10 +72,17 @@ def book():
         for pdf_link in links_list:
             u = urlparse(pdf_link)
 
-            if u.netloc[0:17] == "drive.google.com" or u.path[-4:] == ".pdf":
+            if u.netloc[0:17] == "drive.google.com":
                 in_site = u.geturl()
-
                 data.append(in_site)
+            else:
+                None
+            if u.path[-4:] == ".pdf":
+                in_site_url = u.geturl()
+                data.append(in_site_url)
+            else:
+                None
+               
 
     return render_template("result.html", data = data)
 
