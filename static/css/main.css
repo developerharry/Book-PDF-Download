@@ -52,3 +52,9 @@ input:focus {
     border solid 10px #00FFCE;
     outline:none;
 }
+
+@media screen and (max-width: 800px) {
+  .h1, .p, .input, .#book {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
