@@ -28,7 +28,7 @@ def book():
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0',
     }
     # to search
-    query = "download" + book_name + " book pdf"
+    query = "download" + book_name + " book drive pdf"
 
     sites = []
     data = []
@@ -75,8 +75,7 @@ def book():
                 data.append(in_site)
             else:
                 None
-       
-               
+          
 
     return render_template("result.html", data = data)
 
