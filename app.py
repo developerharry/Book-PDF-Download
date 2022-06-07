@@ -24,7 +24,6 @@ def index():
 def book():
     book_name = str(request.form["book_name_input"])
 
-    i = 0
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0',
     }
@@ -40,7 +39,6 @@ def book():
         x = urlparse(site)
 
         if x.path[-4:] == ".pdf":
-            print("found")
             drive_ur = x.geturl()
             data.append(drive_ur)
         else:
@@ -77,11 +75,7 @@ def book():
                 data.append(in_site)
             else:
                 None
-            if u.path[-4:] == ".pdf":
-                in_site_url = u.geturl()
-                data.append(in_site_url)
-            else:
-                None
+       
                
 
     return render_template("result.html", data = data)
