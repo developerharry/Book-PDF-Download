@@ -60,7 +60,7 @@ input:focus {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
 }
 input{
-    width : 250px;
+    width : 280px;
     height: 40px;
 }
 }
