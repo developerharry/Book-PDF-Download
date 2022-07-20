@@ -76,10 +76,7 @@ def book():
             else:
                 None
           
-    if len(data) == 0:
-        data.append("Use Different Keywords")
-    else:
-        continue
+    
     return render_template("result.html", data = data)
 
 
