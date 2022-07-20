@@ -32,7 +32,7 @@ def book():
 
     sites = []
     data = []
-    for j in search(query, num=15, stop=15, pause=2):
+    for j in search(query, num=20, stop=20, pause=2):
         sites.append(j)
 
     for site in sites:
@@ -51,12 +51,12 @@ def book():
         try:
             read = requests.get(url, timeout=5)
 
-        except requests.exceptions.HTTPError as e:
-            raise SystemExit(e)
-        except requests.exceptions.ConnectionError as e:
-            raise SystemExit(e)
-        except requests.exceptions.RequestException as e:
-            raise SystemExit(e)
+        except requests.exceptions.HTTPError:
+            pass
+        except requests.exceptions.ConnectionError:
+            pass
+        except requests.exceptions.RequestException:
+            pass
         html_content = read.content
         soup = BeautifulSoup(html_content, "html.parser", from_encoding="iso-8859-1")
 
@@ -76,7 +76,10 @@ def book():
             else:
                 None
           
-
+    if len(data) == 0:
+        data.append("Use Different Keywords")
+    else:
+        continue
     return render_template("result.html", data = data)
 
 
